@@ -24,12 +24,12 @@ module FlagCompanyBackend
 
     config.load_defaults 6.0
 
-    config.middleware.insert_before 0, Rack::Cors do
-      allow do
-          origins '*'
-          resource '*', headers: :any, methods: [:get, :post, :delete]
-      end
-    end
+    # config.middleware.insert_before 0, Rack::Cors do
+    #   allow do
+    #       origins '*'
+    #       resource '*', headers: :any, methods: [:get, :post, :delete]
+    #   end
+    # end
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.0
 
